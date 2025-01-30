@@ -1,0 +1,15 @@
+* Criar
+* Destruir
+* Adicionar Início
+* Adicionar Fim
+* Remover Início
+* Remover Fim
+* Vazia
+
+--Qual dado vai ser armazenado?
+Struct Passageiro{
+  char nome[101];
+  char RG[101];
+  char Assento [3]
+  char Destino [101];
+}
