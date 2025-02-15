@@ -1,24 +1,28 @@
 #ifndef LISTA_H
 #define LISTA_H
 
-struct passageiro{
-  char nome[101];
+typedef struct passageiro{
+  char Nome[101];
   char RG[101];
-  char Assento [3];
+  char Assento [11];
   char Destino [101];
-};
 
-typedef struct lista lista;
-struct lista{
-    passageiro *prox, *prev;
-    passageiro passageiro;
-};
+  struct passageiro* prox;
+  struct passageiro* prev;
+  
+} passageiro;
 
-int CriarLista (lista** lista); 
-int DestruirLista (lista** lista); 
-int AddInicioLista (lista* lista, passageiro passageiro); 
-int AddFimLista (lista* lista, passageiro passageiro); 
-int RemInicioLista (lista* lista); 
-int RemFimLista (lista* lista); 
-int VazioLista (lista* lista);  
+typedef struct lista{
+    passageiro* sentinela;
+    int quantidade;
+} lista;
+
+void CriarLista (lista** pplista); 
+void DestruirLista (lista** pplista); 
+void AddInicioLista (lista* pplista, char nome[], char RG[], char assento[], char destino[]); 
+void AddFimLista (lista* pplista, char nome[], char RG[], char assento[], char destino[]); 
+void RemInicioLista (lista* pplista); 
+void RemFimLista (lista* pplista); 
+int VazioLista (lista* pplista);  
+
 #endif
