@@ -1,0 +1,4 @@
+./test_set_max_msg_size.sh: line 12: ./check_set_max_msg_size: No such file or directory
+ERROR: Maximal message size was not reduced by function call.
+Test output was preserved in ./check_set_max_msg_size.output
+FAIL test_set_max_msg_size.sh (exit status: 1)

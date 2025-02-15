@@ -1,0 +1,30 @@
+./test_output.sh: line 37: ./ex_output.exe: No such file or directory
+./test_output.sh: line 38: ./ex_output.exe: No such file or directory
+./test_output.sh: line 39: ./ex_output.exe: No such file or directory
+./test_output.sh: line 40: ./ex_output.exe: No such file or directory
+./test_output.sh: line 41: ./ex_output.exe: No such file or directory
+./test_output.sh: line 42: ./ex_output.exe: No such file or directory
+./test_output.sh: line 43: ./ex_output.exe: No such file or directory
+./test_output.sh: line 44: ./ex_output.exe: No such file or directory
+./test_output.sh: line 45: ./ex_output.exe: No such file or directory
+./test_output.sh: line 46: ./ex_output.exe: No such file or directory
+./test_output.sh: line 47: ./ex_output.exe: No such file or directory
+./test_output.sh: line 48: ./ex_output.exe: No such file or directory
+./test_output.sh: line 49: ./ex_output.exe: No such file or directory
+./test_output.sh: line 50: ./ex_output.exe: No such file or directory
+./test_output.sh: line 56: ./ex_output.exe: No such file or directory
+./test_output.sh: line 57: ./ex_output.exe: No such file or directory
+./test_output.sh: line 58: ./ex_output.exe: No such file or directory
+./test_output.sh: line 59: ./ex_output.exe: No such file or directory
+./test_output.sh: line 60: ./ex_output.exe: No such file or directory
+./test_output.sh: line 61: ./ex_output.exe: No such file or directory
+Problem with ex_output.exe CK_MINIMAL STDOUT NORMAL
+Expected:
+Running suite(s): S1
+ S2
+ XML escape " ' < > & 	 
+X tests
+42%: Checks: 7, Failures: 4, Errors: 0
+Got:
+
+FAIL test_output.sh (exit status: 1)

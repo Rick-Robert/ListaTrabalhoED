@@ -1,0 +1,22 @@
+./test_log_output.sh: line 10: ./ex_output.exe: No such file or directory
+cat: test.log: No such file or directory
+Problem with ex_log_output.exe CK_SILENT LOG NORMAL
+Expected:
+Running suite S1
+ex_output.c:31:P:Core:test_pass:0: Passed
+ex_output.c:37:F:Core:test_fail:0: Failure
+Running suite S2
+ex_output.c:66:P:Core:test_pass2:0: Passed
+ex_output.c:72:F:Core:test_loop:0: Iteration 0 failed
+ex_output.c:72:P:Core:test_loop:1: Passed
+ex_output.c:72:F:Core:test_loop:2: Iteration 2 failed
+Running suite XML escape " ' < > & 	 
+X tests
+ex_output.c:78:F:description " ' < > & 	 
+X end:test_xml_esc_fail_msg:0: fail " ' < > & 	 
+X message
+Results for all suites run:
+42%: Checks: 7, Failures: 4, Errors: 0
+Got:
+
+FAIL test_log_output.sh (exit status: 1)

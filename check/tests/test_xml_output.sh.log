@@ -1,0 +1,69 @@
+./test_xml_output.sh: line 11: ./ex_output.exe: No such file or directory
+cat: test.xml: No such file or directory
+Problem with ex_xml_output.exe
+Expected:
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="http://check.sourceforge.net/xml/check_unittest.xslt"?>
+<testsuites xmlns="http://check.sourceforge.net/ns">
+  <suite>
+    <title>S1</title>
+    <test result="success">
+      <fn>ex_output.c:31</fn>
+      <id>test_pass</id>
+      <iteration>0</iteration>
+      <description>Core</description>
+      <message>Passed</message>
+    </test>
+    <test result="failure">
+      <fn>ex_output.c:37</fn>
+      <id>test_fail</id>
+      <iteration>0</iteration>
+      <description>Core</description>
+      <message>Failure</message>
+    </test>
+  </suite>
+  <suite>
+    <title>S2</title>
+    <test result="success">
+      <fn>ex_output.c:66</fn>
+      <id>test_pass2</id>
+      <iteration>0</iteration>
+      <description>Core</description>
+      <message>Passed</message>
+    </test>
+    <test result="failure">
+      <fn>ex_output.c:72</fn>
+      <id>test_loop</id>
+      <iteration>0</iteration>
+      <description>Core</description>
+      <message>Iteration 0 failed</message>
+    </test>
+    <test result="success">
+      <fn>ex_output.c:72</fn>
+      <id>test_loop</id>
+      <iteration>1</iteration>
+      <description>Core</description>
+      <message>Passed</message>
+    </test>
+    <test result="failure">
+      <fn>ex_output.c:72</fn>
+      <id>test_loop</id>
+      <iteration>2</iteration>
+      <description>Core</description>
+      <message>Iteration 2 failed</message>
+    </test>
+  </suite>
+  <suite>
+    <title>XML escape &quot; &apos; &lt; &gt; &amp; &#x9; &#xA;X tests</title>
+    <test result="failure">
+      <fn>ex_output.c:78</fn>
+      <id>test_xml_esc_fail_msg</id>
+      <iteration>0</iteration>
+      <description>description &quot; &apos; &lt; &gt; &amp; &#x9; &#xA;X end</description>
+      <message>fail &quot; &apos; &lt; &gt; &amp; &#x9; &#xA;X message</message>
+    </test>
+  </suite>
+</testsuites>
+Got:
+
+FAIL test_xml_output.sh (exit status: 1)
