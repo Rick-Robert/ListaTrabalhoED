@@ -7,6 +7,7 @@ void CriarLista (lista** pplista){
     if(*pplista == NULL) *pplista = (lista*) malloc(sizeof(lista));
     (*pplista)->sentinela->prev = (*pplista)->sentinela->prox = (*pplista)->sentinela = (passageiro*) malloc(sizeof(passageiro));
     (*pplista)->quantidade = 0;
+    return;
 }
 
 void DestruirLista (lista** pplista){
